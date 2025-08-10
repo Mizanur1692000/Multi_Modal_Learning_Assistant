@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+google-genai             # Google GenAI SDK (python-genai)
+sentence-transformers
+faiss-cpu               # or faiss-gpu if you have GPU
+pypdf2
+pdfplumber
+openai-whisper          # or faster-whisper (optional) for STT
+gTTS
+matplotlib
+python-multipart
+aiofiles
+requests

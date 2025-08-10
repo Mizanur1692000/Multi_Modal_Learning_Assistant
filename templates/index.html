@@ -1,0 +1,40 @@
+<!-- templates/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Multi-Modal Learning Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Multi-Modal Learning Assistant</h1>
+
+    <section class="upload">
+      <h3>Upload docs (PDF/TXT)</h3>
+      <input id="file" type="file"/>
+      <button id="uploadBtn">Upload</button>
+      <div id="uploadStatus"></div>
+    </section>
+
+    <section class="ask">
+      <h3>Ask (text)</h3>
+      <textarea id="question" rows="3"></textarea><br/>
+      <label><input type="checkbox" id="wantAudio"/> Get audio</label>
+      <label><input type="checkbox" id="wantChart"/> Get chart</label>
+      <button id="askBtn">Ask</button>
+      <div id="answer"></div>
+      <img id="chartImg" src="" style="max-width:600px; display:none"/>
+      <audio id="player" controls style="display:none"></audio>
+    </section>
+
+    <section class="voice">
+      <h3>Ask by voice</h3>
+      <button id="recBtn">Record (start/stop)</button>
+      <div id="recStatus"></div>
+    </section>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html> 
